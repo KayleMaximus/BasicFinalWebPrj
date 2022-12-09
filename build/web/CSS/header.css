@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 1500px;
+}
+#header {
+    height: 80px;
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+/* THANH NAV */
+#nav {
+    display: inline-block;
+}
+#nav , .subnav {
+    list-style-type: none;  
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+/* Thuộc tính ăn theo li không theo a nữa */
+#nav > li > a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(243, 164, 47);
+    text-transform: uppercase;
+
+}
+#nav li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* text-decoration bỏ gạch chân */
+    text-decoration: none;
+    line-height: 40px;
+    padding: 20px 30px;
+    display: block;
+    
+}
+#nav li:hover .subnav {
+    display: block;
+
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color:#000;
+    background-color: #ccc;
+    
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* kế thừa inline sẽ kh kế thừa chiều cao chiều rộng */
+#nav .subnav-item a {
+    color: #000;
+    min-width: 160px ;
+    padding: 12px;
+    line-height: 20px;
+    
+}
+#nav .nav-arrow-down {
+    font-size: 20px;
+}
+
+
+/* LOGIN BUTTON  */
+#wrap-nav .wrap-login-btn{
+    position: relative;
+    display: inline-block; 
+    left: 45%;
+    
+}
+.login-btn{
+    /* font-family: 'Lato', sans-serif;    */
+    font-weight: 600;
+    text-transform: uppercase;
+
+    height: 46px;
+    width: 90px;
+    border-radius: 7px;
+
+    right: 5%;
+    cursor: pointer;
+    padding: 20px auto;
+    text-align: center;
+    display: inline-block;
+    /* color: rgb(249, 245, 245); */
+    background-color: rgb(152, 149, 149);
+    color: rgb(237, 216, 60);
+    border: 2px ;
+    box-shadow: inset 2px 2px 2px 0px rgba(197, 193, 193, 0.5), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+            
+}
+
+.login-btn:hover{
+    background-color: rgb(244, 174, 70);
+    color: #393235;
+}
+/* END LOGIN BUTTON  */
+
+
+/* SIGNUP BUTTON  */
+#wrap-nav .wrap-signup-btn{
+    position: relative;
+    display: inline-block; 
+    left: 46%;
+    
+}
+.signup-btn{
+    /* font-family: 'Lato', sans-serif;    */
+    font-weight: 600;
+    text-transform: uppercase;
+
+    height: 46px;
+    width: 90px;
+    border-radius: 7px;
+
+    right: 5%;
+    cursor: pointer;
+    padding: 20px auto;
+    text-align: center;
+    display: inline-block;
+    /* color: rgb(249, 245, 245); */
+    background-color: rgb(234, 200, 63);
+    color: #313131;
+    border: 2px ;
+    box-shadow: inset 2px 2px 2px 0px rgba(197, 193, 193, 0.5), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+            
+}
+
+.signup-btn:hover{
+    background-color:#393235 ;
+    color: rgb(235, 181, 100);
+}
+/* END LOGIN BUTTON  */
+
+/* END THANH NAV */

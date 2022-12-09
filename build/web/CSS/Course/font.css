@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Hammersmith";
+    src: url("assets/font/HammersmithOne-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url("assets/font/Montserrat-Italic-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/font/Montserrat-VariableFont_wght.ttf") format('truetype');
+}
